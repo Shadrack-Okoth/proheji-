@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="j.css">
+</head>
+<body>
+ <section class="header">
+    <div id="home">
+    <div class="top-nav">
+        <span><ion-icon name="call-outline"></ion-icon>+254715415671</span>
+        <div class="top-nav1">
+        <ul>
+            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <div class="line"></div>
+        </ul>
+        
+    </div>
+        
+    </div>
+    <nav>
+        <div class="logo"><a href=""><img src="technology (1).png" >BRAX.KE</a></div>
+        <div class="toggle"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></div>
+        <ul class="menu">
+            <li><a href="#home" >Home</a></li>
+            <li><a href="#index" >About</a></li>
+            <li><a href="#Services" >Services</a></li>
+            <li><a href="#contact" >Contact Us</a></li>
+            <div class="line"></div>
+        </ul>
+    
+  
+</nav>
+<div class="g">
+    <h1>Welcome to my potfolio,</h1>
+    <h2>I'm  <span class="auto-type"></span></h2><br>
+    <a href="" class="btn">Read More</a>
+</div>
+</div>
+</section >
+<section class="About">
+    <div id="index"></div>
+    <div class="A">
+    <div class="Aa">
+     <img src="CV-modified.png" width="170px" height="170px">
+    </div>
+    <div class="Ab">
+     <pre>
+        <p>Name: Shadrack Afuvya Okoth</p>
+        <p>Profile: Web Developer</p>
+        <p>Email: shdrckokoth@gmail.com</p>
+        <p>Phone: +254715415671</p>
+     </pre>
+    </div>
+</div>
+<div class="B">
+    <h1>About Me</h1>
+    <p>
+            Am organized and hardworking individual who meets customer's satisfaction with quality services.
+            <br>
+            My weakness is multi-tasking I personally deal with each client respective to the time he/she placed his/her order for 
+            a particular service.<br>
+            I always keep promise to my words by accomplishing the tasks at a given range of time without delay and submitting the work prior time.
+        
+    </p>
+</div>
+</section>
+<section class="column">
+    <div id="Services">
+    <h1>SERVICES</h1>
+        <p>Brax.ke is an authorised private company that deals with web-development,
+           Internet and Networking,
+           Graphic design and CCTV Installation as described in deails below
+        </p>
+    <div class="row">
+        <div class="column-row">
+            <span class="icon"><ion-icon name="logo-web-component"></ion-icon></span>
+            <h3>Web-Development</h3>
+            <p>
+                I majorly deal with front-end web-development that
+                is user friendly interface using HTML,CSS,JavaScript and Bootstrap.
+                I always design and code a website for our clients.
+            </p>
+        </div>
+        <div class="column-row">
+            <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+            <h3>Graphic design</h3>
+            <p>I always design Logos and business
+                marketing charts for our clients</p>
+        </div>
+        <div class="column-row">
+           <span class="icon"><ion-icon name="wifi-outline"></ion-icon></span> 
+            <h3>Inernet and Networking</h3>
+            <p>
+                I locate,configure and install internet
+                 for our clients.
+            </p>
+        </div>
+        <div class="column-row">
+            <span class="icon"><ion-icon name="sunny-outline"></ion-icon></span>
+            <h3>CCTV Installation</h3>
+            <p>
+                I also provide a layout for CCTV installation either for home security or business premises.
+                I can either come with our devices or you as a client,buy the gadgets and install for you.
+            </p>
+        </div>
+    </div>
+    </div>
+</section>
+<div class="comment">
+    <div id="contact">
+     <form onsubmit="sendEmail();reset();return false;">
+        <h3>Contact Us</h3>
+        <input type="text" id="name" value="Your Name">
+        <input type="email" id="email" value="Your Email">
+        <textarea id="message" cols="30" rows="10">Your Message</textarea>
+         <button type="submit">SEND</button>
+     </form>
+    </div>
+</div>
+<footer>
+    <p>&copy; Brax.KE All Rights Reserved</p>
+    <P>Designed by Shadrack Okoth</P>
+</footer>
+
+
+   
+    
+   
+   
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".toggle").on("click", function(){
+            if($(".menu").hasClass("active")){
+                $(".menu").removeClass("active");
+                $(this).find('a').html("<ion-icon name='menu-outline'></ion-icon>");
+            }else{
+                $(".menu").addClass("active");
+                $(this).find('a').html("<ion-icon name='close-outline'></ion-icon>");
+            }
+        })
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed= new Typed(".auto-type",{
+      strings : ["Shadrack Okoth,","Front-End Webdesigner," , "Network and Internet administrator,","CCTV and Graphic Designer."],
+      typeSpeed:150,
+      backSpeed:150,
+      loop:true
+  })
+var left = document.getElementById("left");
+function showMenu(){
+  left.style.right="0"
+}
+function hideMenu(){
+  left.style.right="-200px"
+}
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail(){
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "shdrckokoth@gmail.com",
+    Password : "C6820C3E28D203BF87ADD3A2E1107F869AD1",
+    To : 'okothshadrack6@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Customer Service",
+    Body : "Name:" + document.getElementById("name").value
+    + "<br> Email:" +document.getElementById("email").value
+    + "<br> Message:" +document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Successfully")
+);
+}
+</script>
+</html>
